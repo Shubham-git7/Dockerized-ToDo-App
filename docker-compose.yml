@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    image: my-todo-app:v1
+    ports:
+      - "3001:3000"
+    volumes:
+      # Yahan hum aapke laptop ki files ko container se jod rahe hain (Data safe rahega)
+      - ./todos.json:/app/todos.json
+      - ./users.json:/app/users.json
+      - ./sessions.json:/app/sessions.json
+    networks:
+      - app-network
+
+networks:
+  app-network:
