@@ -86,5 +86,23 @@ This project is licensed under the ISC License. See the [LICENSE](LICENSE) file 
 - Add deployment scripts for cloud platforms
 
 ## ⭐️ Star this repo if you found it helpful!
+# 🐳 Dockerized To-Do Application
 
+This is a full-stack Node.js To-Do application that I containerized from scratch as part of my DevOps learning.
+
+## 🚀 Tech Stack & DevOps Tools Used
+- **Application:** Node.js, HTML/CSS
+- **Containerization:** Docker (Multi-stage build)
+- **Orchestration:** Docker Compose
+- **Networking:** Custom Docker Bridge Network
+- **Data Persistence:** Docker Volumes (Bind Mounts for JSON data)
+
+## 🛠️ How to Run
+1. Clone the repo
+2. Run `docker compose up -d`
+3. Access at `http://localhost:3001`
+
+## 📌 Key Learnings
+- Optimized image size using Multi-stage builds.
+- Ensured data persistence so tasks aren't lost when containers are deleted. 
 Happy coding! 🌟
